@@ -26,7 +26,8 @@ export default function PartTwo() {
       />
       <br></br>
       <Link href="/volumes/the-fellowship-of-the-ring">Previous</Link>
-      <br></br>
+      <span> 📚 </span>
+
       <Link href="/volumes/the-return-of-the-king">Next</Link>
     </>
   );
