@@ -8,19 +8,13 @@ export default function Home() {
       <Link href="/">Home</Link>
       <h2>All Volumes</h2>
       <ul>
-        <li>
-          <Link href="/volumes/the-fellowship-of-the-ring">
-            {volumes[0].title}
-          </Link>
-        </li>
-        <li>
-          <Link href="/volumes/the-two-towers">{volumes[1].title}</Link>
-        </li>
-        <li>
-          <Link href="/volumes/the-return-of-the-king">
-            {volumes[2].title}{" "}
-          </Link>
-        </li>
+        {volumes.map(({ slug, title }) => {
+          return (
+            <li key={slug}>
+              <Link href={`/volumes/${slug}`}>{title}</Link>
+            </li>
+          );
+        })}
       </ul>
     </>
   );
