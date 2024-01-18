@@ -11,7 +11,9 @@ export default function HomePage() {
 
       <h1>Lord of the Rings</h1>
       <p>{introduction}</p>
-      <Link href="/volumes">Lord of the Rings: Volume Overview</Link>
+      <Link href="/volumes">
+        Go to <span> → </span> volume overview
+      </Link>
     </>
   );
 }
